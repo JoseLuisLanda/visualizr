@@ -1,2 +1,0 @@
-# visualizr
-test visualizar
