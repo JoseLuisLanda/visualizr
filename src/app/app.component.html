@@ -7,6 +7,7 @@ arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false;'>
 
 </a-scene-->
 <model-viewer src="../assets/Astronaut.glb" 
-ar ar-scale="fixed" camera-controls touch-action="pan-y" 
+ar ar-scale="auto" camera-controls touch-action="pan-y" 
 alt="A 3D model of an astronaut" 
-ios-src="../assets/Astronaut.usdz" xr-environment></model-viewer>
+ios-src="../assets/Astronaut.usdz" xr-environment
+ar environment-image="shared-assets/environments/moon_1k.hdr" ></model-viewer>
