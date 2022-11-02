@@ -24,7 +24,9 @@ export class ARHeaderComponent implements OnInit, OnChanges {
   "https://firebasestorage.googleapis.com/v0/b/visualizr.appspot.com/o/3DModels%2Fsuperman.glb?alt=media&token=51a46dc0-a0c4-418a-81f0-7d2d51489fc5",
   "https://firebasestorage.googleapis.com/v0/b/visualizr.appspot.com/o/3DModels%2Fdelorean_highpoly.glb?alt=media&token=9ddf38f1-e710-4c48-811b-48a6214130cc",
   "https://firebasestorage.googleapis.com/v0/b/visualizr.appspot.com/o/3DModels%2Fdelorean_dmc_12.glb?alt=media&token=09ec2d84-977e-46d5-a141-2e13ed9d4dbd",
-  "https://firebasestorage.googleapis.com/v0/b/visualizr.appspot.com/o/3DModels%2Fnasi_lemak.glb?alt=media&token=f3238115-9690-4267-bb05-e3097e5c1460"];
+  "https://firebasestorage.googleapis.com/v0/b/visualizr.appspot.com/o/3DModels%2Fnasi_lemak.glb?alt=media&token=f3238115-9690-4267-bb05-e3097e5c1460",
+  "https://firebasestorage.googleapis.com/v0/b/visualizr.appspot.com/o/3DModels%2Fdelorean__dmc-12.glb?alt=media&token=8ba93035-ad82-443b-ace1-56e8ccb8ff13",
+  "https://firebasestorage.googleapis.com/v0/b/visualizr.appspot.com/o/3DModels%2Fparzivals_delorean_dmc-12.glb?alt=media&token=bc99d9cf-61f3-47c2-a0eb-375f34ff7415"];
   constructor() { }
   ngOnChanges(changes: SimpleChanges): void {
     console.log("onchanges arheader");
