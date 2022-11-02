@@ -8,7 +8,7 @@ import { ElementId } from 'src/app/collections/element';
 })
 export class ARElementComponent implements OnInit {
   @Input() item: ElementId = 
-  {name:"https://firebasestorage.googleapis.com/v0/b/visualizr.appspot.com/o/3DModels%2Fthe_day_of_the_dead.glb?alt=media&token=32207436-c768-403f-879a-d43ce698d71f"} as ElementId;
+  {name:"https://firebasestorage.googleapis.com/v0/b/visualizr.appspot.com/o/3DModels%2Fspideblack.glb?alt=media&token=ae87bd64-5dc5-49b7-b1c1-bab8e6bad996"} as ElementId;
   
   constructor() { }
 
