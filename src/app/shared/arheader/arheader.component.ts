@@ -21,7 +21,9 @@ export class ARHeaderComponent implements OnInit, OnChanges {
   "https://firebasestorage.googleapis.com/v0/b/visualizr.appspot.com/o/3DModels%2Fcatrina_girl.glb?alt=media&token=89afc89d-20c2-4c43-b2d0-214356406f56",
   "https://firebasestorage.googleapis.com/v0/b/visualizr.appspot.com/o/3DModels%2Faltar_de_dia_de_muertos.glb?alt=media&token=234a9642-8602-4887-a03b-b234e39b51f9",
   "https://firebasestorage.googleapis.com/v0/b/visualizr.appspot.com/o/3DModels%2Fthe_day_of_the_dead.glb?alt=media&token=32207436-c768-403f-879a-d43ce698d71f",
-  "https://firebasestorage.googleapis.com/v0/b/visualizr.appspot.com/o/3DModels%2Fsuperman.glb?alt=media&token=51a46dc0-a0c4-418a-81f0-7d2d51489fc5"];
+  "https://firebasestorage.googleapis.com/v0/b/visualizr.appspot.com/o/3DModels%2Fsuperman.glb?alt=media&token=51a46dc0-a0c4-418a-81f0-7d2d51489fc5",
+  "https://firebasestorage.googleapis.com/v0/b/visualizr.appspot.com/o/3DModels%2Fdelorean_highpoly.glb?alt=media&token=9ddf38f1-e710-4c48-811b-48a6214130cc",
+  "https://firebasestorage.googleapis.com/v0/b/visualizr.appspot.com/o/3DModels%2Fdelorean_dmc_12.glb?alt=media&token=09ec2d84-977e-46d5-a141-2e13ed9d4dbd"];
   constructor() { }
   ngOnChanges(changes: SimpleChanges): void {
     console.log("onchanges arheader");
