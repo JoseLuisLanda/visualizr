@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ARHeaderComponent } from './shared/arheader/arheader.component';
 import { ARElementComponent } from './shared/arelement/arelement.component';
+import { AnnotationsComponent } from './shared/annotations/annotations.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ARHeaderComponent,
-    ARElementComponent
+    ARElementComponent,
+    AnnotationsComponent
   ],
   imports: [
     BrowserModule,
