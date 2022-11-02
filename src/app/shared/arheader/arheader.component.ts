@@ -7,7 +7,7 @@ import { Component, EventEmitter, OnChanges, OnInit, Output, SimpleChanges } fro
 })
 export class ARHeaderComponent implements OnInit, OnChanges {
   @Output() changeModel: EventEmitter<string> = new EventEmitter<string>();
-  nombreModelo: string = "ToyCar";
+  nombreModelo: string[] = ["Astronaut","ToyCar","BarramundiFish","odd-shape","radiance","shishkebab","RobotExpressive","odd-shape-labeled"];
   constructor() { }
   ngOnChanges(changes: SimpleChanges): void {
     console.log("onchanges arheader");
@@ -16,10 +16,10 @@ export class ARHeaderComponent implements OnInit, OnChanges {
 
   ngOnInit(): void {
   }
-  sendModel(modelName: string){
+  sendModel(modelName: number){
     //console.log("otro modelo: " + modelName);
-    this.changeModel.emit(modelName);
-    this.nombreModelo = this.nombreModelo === "ToyCar" ? "Astronaut":"ToyCar";
+    this.changeModel.emit(this.nombreModelo[modelName]);
+
   }
   
 }

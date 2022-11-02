@@ -17,7 +17,7 @@ export class AppComponent implements OnInit, OnChanges  {
     this.item
   }
   receiveModel(modelName: string){
-    //console.log("otro modelo received: " + modelName);
+    console.log("otro modelo received: " + modelName);
     this.itemAR.name = modelName;
   }
   
