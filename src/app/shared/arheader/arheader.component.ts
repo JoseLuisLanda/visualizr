@@ -15,7 +15,8 @@ export class ARHeaderComponent implements OnInit, OnChanges {
   "https://firebasestorage.googleapis.com/v0/b/visualizr.appspot.com/o/3DModels%2Fradiance.glb?alt=media&token=9e6c34a7-9542-430f-9e06-9bcb29632d3a",
   "https://firebasestorage.googleapis.com/v0/b/visualizr.appspot.com/o/3DModels%2Fshishkebab.glb?alt=media&token=6a9f08ff-e221-43d6-8700-6cc238ce9c57",
   "https://firebasestorage.googleapis.com/v0/b/visualizr.appspot.com/o/3DModels%2FRobotExpressive.glb?alt=media&token=2fd7f75a-1649-44e0-81b0-be7f09c70de5",
-  "https://firebasestorage.googleapis.com/v0/b/visualizr.appspot.com/o/3DModels%2Fodd-shape-labeled.glb?alt=media&token=c9f56000-653d-4e70-99c1-d2ee418bc8a2"];
+  "https://firebasestorage.googleapis.com/v0/b/visualizr.appspot.com/o/3DModels%2Fodd-shape-labeled.glb?alt=media&token=c9f56000-653d-4e70-99c1-d2ee418bc8a2",
+  "https://firebasestorage.googleapis.com/v0/b/visualizr.appspot.com/o/3DModels%2Fspideblack.glb?alt=media&token=65e647bc-159d-4b5c-9945-d35839037a27"];
   constructor() { }
   ngOnChanges(changes: SimpleChanges): void {
     console.log("onchanges arheader");
