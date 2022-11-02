@@ -1,12 +1,4 @@
-<div class="navbar" id="navbarColor01">
-    <ul class="mb-2 mb-lg-0">
-      <li class="nav-item active" >
-        <a class="btn" (onClick)="switchTemplate()" routerLink="arelement">AFelement</a>
-      </li>
-     
-    </ul>
-  </div>
-<button class="btn btn-primary" (onclick)="switchTemplate()">Change</button>
+<button class="btn btn-primary" (onClick)="switchTemplate()">Change</button>
 <div *ngIf="!switchTemp">
     <app-arheader (changeModel)="receiveModel($event)"></app-arheader>
     <div class="demo" style="background: linear-gradient(#ffffff, #ada996); overflow-x: hidden;">
