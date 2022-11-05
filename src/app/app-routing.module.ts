@@ -4,7 +4,7 @@ import { AfelementComponent } from './shared/afelement/afelement.component';
 import { ARElementComponent } from './shared/arelement/arelement.component';
 
 const routes: Routes = [
-  {path: 'arelement', component: AfelementComponent}
+  {path: 'afelement', component: AfelementComponent}
 ];
 
 @NgModule({
