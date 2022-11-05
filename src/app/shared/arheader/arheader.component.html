@@ -1,43 +1,101 @@
-<button type="button" class="btn btn-outline-primary" (click)="sendModel(0)">Astronaut</button>
-<button type="button" class="btn btn-outline-primary" (click)="sendModel(1)">ToyCar</button>
-<button type="button" class="btn btn-outline-primary" (click)="sendModel(2)">BarramundiFish</button>
-<button type="button" class="btn btn-outline-primary" (click)="sendModel(3)">odd-shape</button>
-<button type="button" class="btn btn-outline-primary" (click)="sendModel(4)">radiance</button>
-<button type="button" class="btn btn-outline-primary" (click)="sendModel(5)">shishkebab</button>
-<button type="button" class="btn btn-outline-primary" (click)="sendModel(6)">RobotExpressive</button>
-<button type="button" class="btn btn-outline-primary" (click)="sendModel(7)">odd-shape-labeled</button>
-<button type="button" class="btn btn-outline-primary" (click)="sendModel(8)">spiderblack</button>
-<button type="button" class="btn btn-outline-primary" (click)="sendModel(9)">santaclaus</button>
-<button type="button" class="btn btn-outline-primary" (click)="sendModel(10)">catrina</button>
-<button type="button" class="btn btn-outline-primary" (click)="sendModel(11)">altar</button>
-<button type="button" class="btn btn-outline-primary" (click)="sendModel(12)">diamuertos</button>
-<button type="button" class="btn btn-outline-primary" (click)="sendModel(13)">superman</button>
-<button type="button" class="btn btn-outline-primary" (click)="sendModel(14)">delorean</button>
-<button type="button" class="btn btn-outline-primary" (click)="sendModel(15)">delorean2</button>
-<button type="button" class="btn btn-outline-primary" (click)="sendModel(16)">comida</button>
-<button type="button" class="btn btn-outline-primary" (click)="sendModel(17)">delorean3</button>
-<button type="button" class="btn btn-outline-primary" (click)="sendModel(18)">parzival</button>
+<div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          SuperHeroes
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <button type="button" class="btn btn-outline-primary" (click)="sendModel(8)">spiderblack</button>    
+            <button type="button" class="btn btn-outline-primary" (click)="sendModel(13)">superman</button>
+            <button type="button" class="btn btn-outline-primary" (click)="sendModel(23)">batman</button>
+            <button type="button" class="btn btn-outline-primary" (click)="sendModel(33)">captain</button>
+            <button type="button" class="btn btn-outline-primary" (click)="sendModel(19)">venom</button>
+            <button type="button" class="btn btn-outline-primary" (click)="sendModel(31)">venom1</button>
+            <button type="button" class="btn btn-outline-primary" (click)="sendModel(36)">spider</button>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Ovnis Sitios
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <button type="button" class="btn btn-outline-primary" (click)="sendModel(20)">tlaloc</button>
+            <button type="button" class="btn btn-outline-primary" (click)="sendModel(21)">alien</button>
+            <button type="button" class="btn btn-outline-primary" (click)="sendModel(22)">jaguar</button>
+            <button type="button" class="btn btn-outline-primary" (click)="sendModel(24)">ufo</button>
+            <button type="button" class="btn btn-outline-primary" (click)="sendModel(25)">jaguar1</button>
+            <button type="button" class="btn btn-outline-primary" (click)="sendModel(26)">puma</button>
+            <button type="button" class="btn btn-outline-primary" (click)="sendModel(27)">jaguar2</button>
+            <button type="button" class="btn btn-outline-primary" (click)="sendModel(28)">piramid</button>
+            <button type="button" class="btn btn-outline-primary" (click)="sendModel(29)">alien1</button>    
+            <button type="button" class="btn btn-outline-primary" (click)="sendModel(30)">jaguar3</button>
+            <button type="button" class="btn btn-outline-primary" (click)="sendModel(32)">piramid1</button>
+            <button type="button" class="btn btn-outline-primary" (click)="sendModel(34)">ovni</button>
+            <button type="button" class="btn btn-outline-primary" (click)="sendModel(35)">piramid2</button>
+            <button type="button" class="btn btn-outline-primary" (click)="sendModel(37)">ovni</button>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Miscelaneous
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <button type="button" class="btn btn-outline-primary" (click)="sendModel(0)">Astronaut</button>
+            <button type="button" class="btn btn-outline-primary" (click)="sendModel(1)">ToyCar</button> 
+            <button type="button" class="btn btn-outline-primary" (click)="sendModel(2)">BarramundiFish</button>
+            <button type="button" class="btn btn-outline-primary" (click)="sendModel(3)">odd-shape</button>
+            <button type="button" class="btn btn-outline-primary" (click)="sendModel(4)">radiance</button>
+            <button type="button" class="btn btn-outline-primary" (click)="sendModel(5)">shishkebab</button>
+            <button type="button" class="btn btn-outline-primary" (click)="sendModel(6)">RobotExpressive</button>  
+            <button type="button" class="btn btn-outline-primary" (click)="sendModel(7)">odd-shape-labeled</button> 
+            <button type="button" class="btn btn-outline-primary" (click)="sendModel(16)">comida</button>
+        </div>
+      </div>
+    </div>
 
-<button type="button" class="btn btn-outline-primary" (click)="sendModel(19)">venom</button>
-<button type="button" class="btn btn-outline-primary" (click)="sendModel(20)">tlaloc</button>
-<button type="button" class="btn btn-outline-primary" (click)="sendModel(21)">alien</button>
-<button type="button" class="btn btn-outline-primary" (click)="sendModel(22)">jaguar</button>
-<button type="button" class="btn btn-outline-primary" (click)="sendModel(23)">batman</button>
-<button type="button" class="btn btn-outline-primary" (click)="sendModel(24)">ufo</button>
-<button type="button" class="btn btn-outline-primary" (click)="sendModel(25)">jaguar1</button>
-<button type="button" class="btn btn-outline-primary" (click)="sendModel(26)">puma</button>
-<button type="button" class="btn btn-outline-primary" (click)="sendModel(27)">jaguar2</button>
-<button type="button" class="btn btn-outline-primary" (click)="sendModel(28)">piramid</button>
-<button type="button" class="btn btn-outline-primary" (click)="sendModel(29)">alien1</button>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+            Traditions
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <button type="button" class="btn btn-outline-primary" (click)="sendModel(9)">santaclaus</button>
+            <button type="button" class="btn btn-outline-primary" (click)="sendModel(10)">catrina</button>
+            <button type="button" class="btn btn-outline-primary" (click)="sendModel(11)">altar</button>
+            <button type="button" class="btn btn-outline-primary" (click)="sendModel(12)">diamuertos</button>
+            <button type="button" class="btn btn-outline-primary" (click)="sendModel(14)">delorean</button>
+            <button type="button" class="btn btn-outline-primary" (click)="sendModel(15)">delorean2</button>
+            <button type="button" class="btn btn-outline-primary" (click)="sendModel(17)">delorean3</button>
+            <button type="button" class="btn btn-outline-primary" (click)="sendModel(18)">parzival</button>
+          </div>
+        </div>
+      </div>
 
-<button type="button" class="btn btn-outline-primary" (click)="sendModel(30)">jaguar3</button>
-<button type="button" class="btn btn-outline-primary" (click)="sendModel(31)">venom1</button>
-<button type="button" class="btn btn-outline-primary" (click)="sendModel(32)">piramid1</button>
-<button type="button" class="btn btn-outline-primary" (click)="sendModel(33)">captain</button>
-<button type="button" class="btn btn-outline-primary" (click)="sendModel(34)">ovni</button>
-<button type="button" class="btn btn-outline-primary" (click)="sendModel(35)">piramid2</button>
-<button type="button" class="btn btn-outline-primary" (click)="sendModel(36)">spider</button>
-<button type="button" class="btn btn-outline-primary" (click)="sendModel(37)">ovni</button>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
