@@ -37,9 +37,6 @@ export class ARHeaderComponent implements OnInit, OnChanges {
   "../../../assets/models/delorean__dmc-12.glb",
   "../../../assets/models/parzivals_delorean_dmc-12.glb",
   
-  
- 
-  
   "../../../assets/models/jaguar.glb",
   "../../../assets/models/puma_gray.glb",
   "../../../assets/models/jaguar_animation.glb",
@@ -52,7 +49,24 @@ export class ARHeaderComponent implements OnInit, OnChanges {
   "../../../assets/models/ovni_low_poly.glb",
   "../../../assets/models/piramid.glb",
   
-  "../../../assets/models/plato_volador_amina.glb"];
+  "../../../assets/models/plato_volador_amina.glb",
+
+  "../../../assets/models/t-shirt_m.glb",
+  "../../../assets/models/t-shirt_mask.glb",
+  "../../../assets/models/t-shirt.glb",
+  "../../../assets/models/t-shirtone.glb",
+  "../../../assets/models/skirt_and_t-shirt.glb",
+  "../../../assets/models/std_t-shirt.glb",
+  "../../../assets/models/tenis_surrado.glb",
+  "../../../assets/models/hoverboard.glb",
+  "../../../assets/models/hover_board_low_poly.glb",
+  "../../../assets/models/charging_bull.glb",
+  "../../../assets/models/bull_man.glb",
+  "../../../assets/models/bull_for_3d_printing.glb",
+  "../../../assets/models/bull_basemesh.glb",
+  "../../../assets/models/blue_bull_miniature.glb",
+  "../../../assets/models/marty_mcfly.glb",
+];
   constructor() { }
   ngOnChanges(changes: SimpleChanges): void {
     console.log("onchanges arheader");
