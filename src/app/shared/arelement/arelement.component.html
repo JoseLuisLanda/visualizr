@@ -8,12 +8,8 @@
 
   <a-scene>
     <a-assets>
-      <a-asset-item position="0 0.15 -5" id="tree" src="../../../assets/models/2018_venom.glb"></a-asset-item>
+      <a-asset-item scale="0.01 0.01 0.01" position="0 -0.9 0" id="tree" src="../../../assets/models/spideblack.glb"></a-asset-item>
     </a-assets>
   
-    <!-- Using the asset management system. -->
-    <a-gltf-model src="#tree"></a-gltf-model>
-  
-    <!-- Defining the URL inline. Not recommended but more comfortable for web developers. -->
-    <a-gltf-model src="../../../assets/models/2018_venom.glb"></a-gltf-model>
+    <a-entity gltf-model="#tree"></a-entity>
   </a-scene>
