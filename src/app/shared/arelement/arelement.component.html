@@ -1,36 +1,5 @@
-
 <model-viewer src="{{item.name}}" 
 autoplay ar ar-scale="auto" camera-controls touch-action="pan-y" 
 alt="A 3D model of an astronaut" 
 ios-src="{{item.name}}" xr-environment
-ar  >
-<button slot="hotspot-dot+X-Y+Z" class="dot" data-position="1 -1 1" data-normal="1 0 0"></button>
-<button slot="hotspot-dim+X-Y" class="dim" data-position="1 -1 0" data-normal="1 0 0"></button>
-<button slot="hotspot-dot+X-Y-Z" class="dot" data-position="1 -1 -1" data-normal="1 0 0"></button>
-<button slot="hotspot-dim+X-Z" class="dim" data-position="1 0 -1" data-normal="1 0 0"></button>
-<button slot="hotspot-dot+X+Y-Z" class="dot show" data-position="1 1 -1" data-normal="0 1 0"></button>
-<button slot="hotspot-dim+Y-Z" class="dim show" data-position="0 -1 -1" data-normal="0 1 0"></button>
-<button slot="hotspot-dot-X+Y-Z" class="dot show" data-position="-1 1 -1" data-normal="0 1 0"></button>
-<button slot="hotspot-dim-X-Z" class="dim" data-position="-1 0 -1" data-normal="-1 0 0"></button>
-<button slot="hotspot-dot-X-Y-Z" class="dot" data-position="-1 -1 -1" data-normal="-1 0 0"></button>
-<button slot="hotspot-dim-X-Y" class="dim" data-position="-1 -1 0" data-normal="-1 0 0"></button>
-<button slot="hotspot-dot-X-Y+Z" class="dot" data-position="-1 -1 1" data-normal="-1 0 0"></button>
-<svg id="lines" xmlns="http://www.w3.org/2000/svg" class="dimensionLineContainer">
-  <line class="dimensionLine"></line>
-  <line class="dimensionLine"></line>
-  <line class="dimensionLine"></line>
-  <line class="dimensionLine"></line>
-  <line class="dimensionLine"></line>
-</svg>
-
-<div id="controls" class="dim">
-  <label for="src">Product:</label>
-  <select id="src">
-    <option value="../../assets/ShopifyModels/Chair.glb">Chair</option>
-    <option value="../../assets/ShopifyModels/Mixer.glb">Mixer</option>
-    <option value="../../assets/ShopifyModels/GeoPlanter.glb">Cactus</option>
-  </select><br>
-
-  <label for="show-dimensions">Show Dimensions:</label>
-  <input id="show-dimensions" type="checkbox" checked="true">
-</div></model-viewer>
+ar  ></model-viewer>
