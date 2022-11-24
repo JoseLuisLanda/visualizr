@@ -4,9 +4,13 @@
         <a-entity gltf-model="#tree" scale="0.01 0.01 0.01"></a-entity>
     </a-marker>
     <a-entity camera></a-entity>
-  </a-scene-->
+  </a-scene>
 
   <a-scene>
     <a-entity class="clickable" geometry="primitive: box" position="1 0 0"></a-entity>
     <a-entity class="not-clickable" geometry="primitive: sphere" position="-1 0 0"></a-entity>
-  </a-scene>
+  </a-scene-->
+  <model-viewer camera-controls touch-action="pan-y" 
+  autoplay ar ar-modes="webxr scene-viewer" shadow-intensity="1" 
+  src="../../../assets/models/RobotExpressive.glb" 
+  alt="An animated 3D model of a robot"></model-viewer>
