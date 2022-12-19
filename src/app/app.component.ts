@@ -10,7 +10,7 @@ export class AppComponent implements OnInit, OnChanges  {
   @Output() item: EventEmitter<ElementId> = new EventEmitter<ElementId>();
   switchTemp: boolean  = false;
   title = 'Visualiz-AR';
-  itemAR:ElementId={uid:"sky",name:"../../../assets/models/sky.glb"};
+  itemAR:ElementId={uid:"sky",name:"../../../assets/models/Astronaut.glb"};
   ngOnChanges(changes: SimpleChanges): void {
     throw new Error('Method not implemented.');
   }
