@@ -1,10 +1,22 @@
 <a-scene embedded arjs>
+
+    <a-assets>
+		<img id="earth-sphere" src="../assets/images/earth-sphere.jpg" />
+	</a-assets>
        <a-marker type="hiro" >
            <a-sphere radius="1" color="#EF2D5E"></a-sphere>
         </a-marker>
         <a-marker type="pattern" url="../assets/presets/kanji.patt" >
             <a-sphere radius="1" color="#EF2D5E"></a-sphere>
          </a-marker>
- 
+         <a-marker type="pattern" url="data/letterA.patt">
+            <a-sphere 
+                   id="earth"
+                   position="0 0.5 0" 
+                   material="src: #earth-sphere; transparent: true; opacity: 0.95;"
+                   spinner >
+                   
+            </a-sphere>
+        </a-marker>
         <a-entity camera></a-entity>
     </a-scene>
