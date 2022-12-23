@@ -2,5 +2,13 @@
     2    <a-marker type="hiro" >
     3        <a-sphere radius="1" color="#EF2D5E"></a-sphere>
     4    </a-marker>
+    <a-marker type="pattern" url="../assets/presets/kanji.png">
+        <a-box position="0 0.5 0" 
+               material="color: red; transparent: true; opacity: 0.50;">
+        </a-box>
+    </a-marker>
+    <a-marker preset="pattern">
+        <a-entity gltf-model="../assets/presets/letterA.png" scale="0.01 0.01 0.01"></a-entity>
+    </a-marker>
     5    <a-entity camera></a-entity>
     6</a-scene>
