@@ -11,6 +11,11 @@ max-camera-orbit="auto 100deg auto" shadow-intensity="1" -->
     <a-marker preset="hiro">
         <a-entity gltf-model="../../../assets/models/spideblack.glb" scale="0.01 0.01 0.01"></a-entity>
     </a-marker>
+    <a-marker type="pattern" url="data/kanji.patt">
+      <a-box position="0 0.5 0" 
+             material="color: red; transparent: true; opacity: 0.50;">
+      </a-box>
+  </a-marker>
     <a-entity camera></a-entity>
   </a-scene>
 
