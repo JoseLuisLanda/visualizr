@@ -1,32 +1,10 @@
 
-<!--a class="btn btn-primary" routerLink="/afelement">GO HIRO</a>
+<!--a class="btn btn-primary" routerLink="/afelement">GO HIRO</a-->
 <app-arheader (changeModel)="receiveModel($event)"></app-arheader>
 <div class="demo" style="background: linear-gradient(#ffffff, #ada996); overflow: hidden;">
-    <!--app-afelement></app-afelement>
-    <app-arelement [item]="itemAR"></app-arelement> 
+    <app-afelement></app-afelement>
+    <!--app-arelement [item]="itemAR"></app-arelement--> 
 </div>
 <!--div *ngIf="switchTemp">
 <app-afelement></app-afelement>
 </div-->
-<div class="demo" style="background: linear-gradient(#ffffff, #ada996); overflow: hidden;">
-  
-<a-scene embedded arjs>
-  
-    <a-assets>
-    <img id="earth-sphere" src="../../../assets/images/earth-sphere.jpeg" />
-        <a-asset-item id="back" src="../../../assets/models/hoverboard.glb"></a-asset-item>
-  </a-assets>
-    <a-marker type="hiro">
-        <a-plane id="followerPlane"
-        position="0 1 0"
-        rotation="-90 0 0"
-        material="src:#earth-sphere;">
- </a-plane>
-
-    </a-marker>
-
-        <a-entity camera></a-entity>
-
-    </a-scene>
-    </div>
-
