@@ -1,11 +1,9 @@
-<a-scene embedded arjs>
-    <a-marker preset="hiro">
+<a-scene embedded artoolkit="sourceType: webcam;">
         <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
-        <a-entity
-        position="0 0 0"
-        scale="0.05 0.05 0.05"
-        gltf-model="../../../assets/models/textureCubes.gltf"
-        ></a-entity>
-    </a-marker>
-    <a-entity camera></a-entity>
+        <a-box
+        position="0 0.5 0"
+        material="opacity: 0.5; "
+        ></a-box>
+
+    <a-marker-entity camera></a-marker-entity>
     </a-scene>
