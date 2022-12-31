@@ -1,9 +1,45 @@
-<a-scene embedded artoolkit="sourceType: webcam;">
-        <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
-        <a-box
-        position="0 0.5 0"
-        material="opacity: 0.5; "
-        ></a-box>
+<script>
+    AFRAME.registerComponent('markerhandler', {
+    init: function() {
+        const vid = document.querySelector('#vid');
+        this.el.sceneEl.addEventListener('markerFound', () => {
+            // redirect to custom URL
+            vid.play();
+        });
+        this.el.sceneEl.addEventListener('markerLost', () => {
+            // redirect to custom URL
+            vid.pause();
+        });
+}});
+</script>
+<a-scene
+device-orientation-permission-ui="enabled: false"
+vr-mode-ui="enabled: false"
+markerhandler embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
 
-    <a-marker-entity camera></a-marker-entity>
-    </a-scene>
+<a-assets>
+<video
+    id="vid"
+    src="../../../assets/videos/test.mp4"
+    preload="auto"
+    response-type="arraybuffer"
+    autoplay
+    loop
+    muted
+    crossorigin
+    webkit-playsinline
+    playsinline
+></video>
+</a-assets>
+
+<a-marker preset="hiro" markerhandler smooth="true" smoothCount="5" smoothTolerance="0.01" smoothThreshold="2">
+<a-video
+    src="#vid"
+    scale="1 1 1"
+    position="0 0.4 0"
+    rotation="-90 0 0"
+></a-video>
+</a-marker>
+
+<a-entity camera></a-entity>
+</a-scene>
