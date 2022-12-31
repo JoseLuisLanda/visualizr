@@ -9,12 +9,13 @@
             marker.addEventListener('markerFound', function() {
                 // check if marker is found for the first time;
                 //  if so, make object visible and align position/rotation.
-                if ( follower.getAttribute("active") == "0" )
+                /*if ( follower.getAttribute("active") == "0" )
                 {
                     follower.setAttribute("active", "1");
                     followerPlane.setAttribute("material", "visible", "true");   
                 }
-                markerVisible = true;
+                markerVisible = true;*/
+                window.location = 'https://www.google.com/';
             });
     
             marker.addEventListener('markerLost', function() {
@@ -133,7 +134,6 @@ markerhandler embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
           <a-plane id="followerPlane"
           position="0 0 0"
           rotation="-90 0 0"
-          color = "green"
           material="src:#earth-sphere;">
    </a-plane>
   
