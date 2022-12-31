@@ -47,6 +47,7 @@
                 follower.object3D.scale.lerp(this.s, lerpAmount);
                 
                 followerPlane.setAttribute("color", "green");
+                if(document.querySelector("followerPlane").object3D.visible == true)
                 alert("hola marcador");
             } 
             else
@@ -65,6 +66,9 @@
                 //   for example:
                 // let target = document.querySelector('#earth').object3D;
                 // target.scale.set( 0.75, 0.75, 0.75 );
+                if(document.querySelector("followerPlane").object3D.visible == true){
+                    alert("hola marcador en updater");
+                }
             },
             
             // time      = total time since init (milliseconds)
