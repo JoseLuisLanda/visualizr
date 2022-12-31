@@ -9,12 +9,12 @@
             marker.addEventListener('markerFound', function() {
                 // check if marker is found for the first time;
                 //  if so, make object visible and align position/rotation.
-                /*if ( follower.getAttribute("active") == "0" )
+                if ( follower.getAttribute("active") == "0" )
                 {
                     follower.setAttribute("active", "1");
                     followerPlane.setAttribute("material", "visible", "true");   
                 }
-                markerVisible = true;*/
+                markerVisible = true;
                 alert("hola marcador");
             });
     
@@ -47,6 +47,7 @@
                 follower.object3D.scale.lerp(this.s, lerpAmount);
                 
                 followerPlane.setAttribute("color", "green");
+                alert("hola marcador");
             } 
             else
             {
