@@ -1,21 +1,11 @@
-<a-scene embedded vr-mode-ui="enabled: false;" arjs="debugUIEnabled: false;">
-
-    <a-assets>
-		<img id="earth-sphere" src="../../../assets/images/earth-sphere.jpeg" />
-	</a-assets>
-
-    <!-- 
-    for more info, see: https://aframe.io/docs/1.0.0/components/animation.html 
-    for more examples:  https://stemkoski.github.io/A-Frame-Examples/animation.html
-    -->
-    
-    <a-marker type="pattern" url="../../../assets/presets/kanji.patt">
-        <a-sphere position="0 0.5 0" 
-               material="src: #earth-sphere; transparent: true; opacity: 0.95;"
-               animation__rotate = "property: rotation; dur: 8000; easing: linear; dir: normal; from:0 0 0; to: 0 360 0; loop: true;">
-        </a-sphere>
+<a-scene embedded arjs>
+    <a-marker preset="hiro">
+        <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
+        <a-entity
+        position="0 0 0"
+        scale="0.05 0.05 0.05"
+        gltf-model="../../../assets/models/textureCubes.gltf"
+        ></a-entity>
     </a-marker>
-    
     <a-entity camera></a-entity>
-    
-</a-scene>
+    </a-scene>
