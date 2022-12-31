@@ -36,45 +36,47 @@ markerhandler embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
       <img id="earth-sphere" src="../../../assets/images/earth-sphere.jpeg" />
           <a-asset-item id="back" src="../../../assets/models/hoverboard.glb"></a-asset-item>
     </a-assets>
-      <a-marker type="hiro">
-          <a-plane id="followerPlane"
-          position="0 1 0"
-          rotation="-90 0 0"
-          material="src:#earth-sphere;">
-   </a-plane>
-  
-      </a-marker>
-      <a-marker type="pattern" url="../../../assets/presets/letterB.patt" >
+    <a-marker-camera preset="hiro">
+        <a-plane id="followerPlane"
+        position="0 1 0"
+        rotation="-90 0 0"
+        material="src:#earth-sphere;">
+ </a-plane>
+    </a-marker-camera>
+    
+      <!--a-marker type="pattern" url="../../../assets/presets/letterB.patt" >
           <a-sphere position="0 0.5 0" 
           material="src: #earth-sphere; transparent: true; opacity: 0.95;"
           animation__rotate = "property: rotation; dur: 8000; easing: linear; dir: normal; from:0 0 0; to: 0 360 0; loop: true;">
           </a-sphere>
       </a-marker> 
-        <!--a-marker type="pattern" url="../../../assets/presets/letterA.patt" >
+
+
+        <a-marker type="pattern" url="../../../assets/presets/letterA.patt" >
           <a-sphere 
           id="earth"
           position="0 0.5 0" 
           material="src: #earth-sphere; transparent: true; opacity: 0.95;"
           spinner >
           
-   </a-sphere-->
+   </a-sphere>
+
+
      <a-marker type="pattern" url="../../../assets/presets/letterA.patt" >
           <a-entity   position="0 0 0" 
           rotation="0 0 0"
           scale="0.50 0.50 0.50"
           gltf-model="#back" >
           </a-entity>
-      <!--a-marker type="pattern" url="../../../assets/presets/letterA.patt" >
+      <a-marker type="pattern" url="../../../assets/presets/letterA.patt" >
           <a-entity   position="0 0 0" 
           rotation="0 0 0"
           scale="0.50 0.50 0.50"
           gltf-model="#back" >
-  </a-entity-->
-     </a-marker>
-          <a-entity camera></a-entity>
-  
-      <!-- empty entity, running previously declared script -->
-      <a-entity updater></a-entity>
+  </a-entity>
+     </a-marker-->
+
+
       </a-scene>
 
   
