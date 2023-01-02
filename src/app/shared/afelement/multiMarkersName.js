@@ -32,10 +32,25 @@ AFRAME.registerComponent('markers_start',{
 			//Adding text to each marker
 			var textEl = document.createElement('a-entity');
 			
-			textEl.setAttribute('id','text');
-			textEl.setAttribute('text',{color: 'red', align: 'center', value:markersNameArray[k], width: '5.5'});
+			//textEl.setAttribute('id','text');
+			//textEl.setAttribute('text',{color: 'red', align: 'center', value:markersNameArray[k], width: '5.5'});
+			textEl.setAttribute('id','plane');
+			textEl.setAttribute('plane',{src: '../../../assets/images/earth-sphere.jpeg"', color: '#FFF'});
 			textEl.object3D.position.set(0, 0.7, 0);
 			textEl.object3D.rotation.set(-90, 0, 0);
+
+/*
+ <a-assets>
+      <img id="earth-sphere" src="../../../assets/images/earth-sphere.jpeg" />
+          <a-asset-item id="back" src="../../../assets/models/hoverboard.glb"></a-asset-item>
+    </a-assets>
+  <a-plane id="followerPlane"
+          position="0 0 0"
+          position="0 1 0"
+          rotation="-90 0 0"
+          material="src:#earth-sphere;">
+   </a-plane>
+*/
 
 			markerEl.appendChild(textEl);
 		}
