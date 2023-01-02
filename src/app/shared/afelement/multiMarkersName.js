@@ -35,12 +35,17 @@ AFRAME.registerComponent('markers_start',{
 			//textEl.setAttribute('id','text');
 			//textEl.setAttribute('text',{color: 'red', align: 'center', value:markersNameArray[k], width: '5.5'});
 			textEl.setAttribute('id','image');
+			textEl.setAttribute('class','clickable');
+			textEl.setAttribute('gesture-handler',{minScale: '0.25', maxScale: '10'});
 			textEl.setAttribute('geometry',{width:'4', heigh:'3'});
 			textEl.setAttribute('material',{src: '#menu-img', color: '#FFF'});
 			textEl.object3D.position.set(0, 1, 0);
 			textEl.object3D.rotation.set(-90, 0, 0);
 
 /*
+class="clickable"
+      gesture-handler="minScale: 0.25; maxScale: 10"
+
  <a-assets>
       <img id="earth-sphere" src="../../../assets/images/earth-sphere.jpeg" />
           <a-asset-item id="back" src="../../../assets/models/hoverboard.glb"></a-asset-item>
@@ -66,7 +71,7 @@ AFRAME.registerComponent('registerevents', {
 
 			marker.addEventListener("markerFound", ()=> {
 				var markerId = marker.id;
-				window.location = 'https://www.google.com/';
+				//window.location = 'https://www.google.com/';  //works
 				console.log('Marker Found: ', markerId);
 			});
 
