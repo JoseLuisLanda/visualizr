@@ -35,9 +35,9 @@ AFRAME.registerComponent('markers_start',{
 			//textEl.setAttribute('id','text');
 			//textEl.setAttribute('text',{color: 'red', align: 'center', value:markersNameArray[k], width: '5.5'});
 			textEl.setAttribute('id','image');
-			textEl.setAttribute('geometry',{width:'2'});
-			textEl.setAttribute('material',{src: '../../../assets/images/earth-sphere.jpeg', color: '#FFF'});
-			textEl.object3D.position.set(0, 0.7, 0);
+			textEl.setAttribute('geometry',{width:'4'});
+			textEl.setAttribute('material',{src: '#menu-img', color: '#FFF'});
+			textEl.object3D.position.set(0, 1, 0);
 			textEl.object3D.rotation.set(-90, 0, 0);
 
 /*
