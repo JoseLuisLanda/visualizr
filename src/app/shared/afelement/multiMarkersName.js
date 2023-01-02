@@ -30,11 +30,11 @@ AFRAME.registerComponent('markers_start',{
 			sceneEl.appendChild(markerEl);
 
 			//Adding text to each marker
-			var textEl = document.createElement('a-entity');
+			var textEl = document.createElement('a-image');
 			
 			//textEl.setAttribute('id','text');
 			//textEl.setAttribute('text',{color: 'red', align: 'center', value:markersNameArray[k], width: '5.5'});
-			textEl.setAttribute('id','plane');
+			textEl.setAttribute('id','image');
 			textEl.setAttribute('geometry',{width:'2'});
 			textEl.setAttribute('material',{src: '../../../assets/images/earth-sphere.jpeg"', color: '#FFF'});
 			textEl.object3D.position.set(0, 0.7, 0);
