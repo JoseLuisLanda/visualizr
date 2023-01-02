@@ -37,7 +37,7 @@ AFRAME.registerComponent('markers_start',{
 			textEl.setAttribute('id','image');
 			textEl.setAttribute('class','clickable');
 			textEl.setAttribute('gesture-handler',{minScale: '0.25', maxScale: '10'});
-			textEl.setAttribute('geometry',{width:'4', heigh:'3'});
+			textEl.setAttribute('geometry',{width:'4', height:'3'});
 			textEl.setAttribute('material',{src: '#menu-img', color: '#FFF'});
 			textEl.object3D.position.set(0, 1, 0);
 			textEl.object3D.rotation.set(-90, 0, 0);
@@ -63,7 +63,16 @@ class="clickable"
 	}
 });
 
+function handleRotation(event) {
+    if (isMarkerVisible) {
+      el.object3D.rotation.y +=
+        event.detail.positionChange.x * rotationFactor;
 
+      el.object3D.rotation.x +=
+        event.detail.positionChange.y * rotationFactor;
+    }
+  }
+  
 //Detect marker found and lost
 AFRAME.registerComponent('registerevents', {
 		init: function () {
@@ -73,6 +82,24 @@ AFRAME.registerComponent('registerevents', {
 				var markerId = marker.id;
 				//window.location = 'https://www.google.com/';  //works
 				console.log('Marker Found: ', markerId);
+				sceneEl.addEventListener("onefingermove", handleRotation);
+				marker.addEventListener("twofingermove", function () {
+					
+						if (isMarkerVisible) {
+						  this.scaleFactor *=
+							1 + detail.spreadChange / detail.startSpread;
+					
+						  this.scaleFactor = Math.min(
+							Math.max(this.scaleFactor, this.data.minScale),
+							this.data.maxScale
+						  );
+					
+						  el.object3D.scale.x = scaleFactor * initialScale.x;
+						  el.object3D.scale.y = scaleFactor * initialScale.y;
+						  el.object3D.scale.z = scaleFactor * initialScale.z;
+						}
+					  
+				});
 			});
 
 			marker.addEventListener("markerLost",() =>{
