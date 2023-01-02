@@ -38,8 +38,8 @@ AFRAME.registerComponent('markers_start',{
 			textEl.setAttribute('class','clickable');
 			textEl.setAttribute('gesture-handler',{minScale: '0.25', maxScale: '10'});
 			textEl.setAttribute('geometry',{width:'1', height:'2'});
-			textEl.setAttribute('material',{src: '#menu-img', color: '#FFF'});
-			textEl.object3D.position.set(0, .1, 0);
+			textEl.setAttribute('material',{src: '#menu'+[k], color: '#FFF'});
+			textEl.object3D.position.set(0, 0, 0);
 			textEl.object3D.rotation.set(-90, 0, 0);
 
 /*
