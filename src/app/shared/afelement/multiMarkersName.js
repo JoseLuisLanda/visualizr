@@ -35,7 +35,7 @@ AFRAME.registerComponent('markers_start',{
 			//textEl.setAttribute('id','text');
 			//textEl.setAttribute('text',{color: 'red', align: 'center', value:markersNameArray[k], width: '5.5'});
 			textEl.setAttribute('id','image');
-			textEl.setAttribute('geometry',{width:'4'});
+			textEl.setAttribute('geometry',{width:'4', heigh:'3'});
 			textEl.setAttribute('material',{src: '#menu-img', color: '#FFF'});
 			textEl.object3D.position.set(0, 1, 0);
 			textEl.object3D.rotation.set(-90, 0, 0);
@@ -66,6 +66,7 @@ AFRAME.registerComponent('registerevents', {
 
 			marker.addEventListener("markerFound", ()=> {
 				var markerId = marker.id;
+				window.location = 'https://www.google.com/';
 				console.log('Marker Found: ', markerId);
 			});
 
