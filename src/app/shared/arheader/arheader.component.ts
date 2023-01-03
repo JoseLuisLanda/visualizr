@@ -11,7 +11,7 @@ export class ARHeaderComponent implements OnInit, OnChanges {
 //models tuzo
     "../../../assets/modelstuzofari/armadillo.glb",//8    0
     "../../../assets/modelstuzofari/bengal_cat.glb",//5   1
-    "../../../assets/modelstuzofari/lagarto.glb",//13     2 dif
+    //"../../../assets/modelstuzofari/lagarto.glb",//13     2 dif
     "../../../assets/modelstuzofari/lobo_anim.glb",//1    3 ok gde
     //"../../../assets/modelstuzofari/lobo.glb",//5         4 n
     //"../../../assets/modelstuzofari/lobopup.glb",//6.6    5 n
