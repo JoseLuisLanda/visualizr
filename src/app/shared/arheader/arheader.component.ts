@@ -11,27 +11,27 @@ export class ARHeaderComponent implements OnInit, OnChanges {
 //models tuzo
     "../../../assets/modelstuzofari/armadillo.glb",//8    0
     "../../../assets/modelstuzofari/bengal_cat.glb",//5   1
-    "../../../assets/modelstuzofari/lagarto.glb",//13     2
-    "../../../assets/modelstuzofari/lobo_anim.glb",//1    3
-    "../../../assets/modelstuzofari/lobo.glb",//5         4
-    "../../../assets/modelstuzofari/lobopup.glb",//6.6    5
+    "../../../assets/modelstuzofari/lagarto.glb",//13     2 dif
+    "../../../assets/modelstuzofari/lobo_anim.glb",//1    3 n
+    //"../../../assets/modelstuzofari/lobo.glb",//5         4 n
+    //"../../../assets/modelstuzofari/lobopup.glb",//6.6    5 n
     "../../../assets/modelstuzofari/pinguino.glb",//.900   6
     "../../../assets/modelstuzofari/siberian_husky.glb",//.925    7
 //models dino
-    "../../../assets/modelsjurassic/alienverde.glb",//2    8
-    "../../../assets/modelsjurassic/ankylosaurus.glb",//2   9
-    "../../../assets/modelsjurassic/ceratosaurus.glb",//3     10
-    "../../../assets/modelsjurassic/gallimimus.glb",//3    11
-    "../../../assets/modelsjurassic/megalodon.glb",//5         12
-    "../../../assets/modelsjurassic/mosasaurus.glb",//7    13
-    "../../../assets/modelsjurassic/paluxysaurus.glb",//26   14
-    "../../../assets/modelsjurassic/quetzalcoatlus.glb",//21    15
-    "../../../assets/modelsjurassic/spinosaurus.glb",//7    16
-    "../../../assets/modelsjurassic/stygimoloch.glb",//7   17
-    "../../../assets/modelsjurassic/suchomimus.glb",//2.6     18
-    "../../../assets/modelsjurassic/torosaurus.glb",//1    19
-    "../../../assets/modelsjurassic/triceratops.glb",//6         20
-    "../../../assets/modelsjurassic/velociraptor.glb",//4    21
+    "../../../assets/modelsjurassic/alienverde.glb",//2    8 n
+    "../../../assets/modelsjurassic/ankylosaurus.glb",//2   9 n
+    "../../../assets/modelsjurassic/ceratosaurus.glb",//3     10  ok
+    "../../../assets/modelsjurassic/gallimimus.glb",//3    11 heavy ojos mal
+    //"../../../assets/modelsjurassic/megalodon.glb",//5         12 new version
+   // "../../../assets/modelsjurassic/mosasaurus.glb",//7    13  dificil
+    //"../../../assets/modelsjurassic/paluxysaurus.glb",//26   14 new ver
+    "../../../assets/modelsjurassic/quetzalcoatlus.glb",//21    15 ok muy grande
+    "../../../assets/modelsjurassic/spinosaurus.glb",//7    16 ok gde
+    //"../../../assets/modelsjurassic/stygimoloch.glb",//7   17 chico dif
+    "../../../assets/modelsjurassic/suchomimus.glb",//2.6     18  ok
+    "../../../assets/modelsjurassic/torosaurus.glb",//1    19   ok
+    //"../../../assets/modelsjurassic/triceratops.glb",//6         20  no
+    "../../../assets/modelsjurassic/velociraptor.glb",//4    21   ok
 
 
     "../../../assets/models/spideblack.glb",//4.16    22
