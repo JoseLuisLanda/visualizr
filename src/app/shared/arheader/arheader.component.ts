@@ -20,8 +20,8 @@ export class ARHeaderComponent implements OnInit, OnChanges {
 //models dino
     //"../../../assets/modelsjurassic/alienverde.glb",//2    8 n
     //"../../../assets/modelsjurassic/ankylosaurus.glb",//2   9 n
-    "../../../assets/modelsjurassic/ceratosaurus.glb",//3     10  ok
-    "../../../assets/modelsjurassic/gallimimus.glb",//3    11 heavy ojos mal
+    //"../../../assets/modelsjurassic/ceratosaurus.glb",//3     10  ok
+    //"../../../assets/modelsjurassic/gallimimus.glb",//3    11 heavy ojos mal
     //"../../../assets/modelsjurassic/megalodon.glb",//5         12 new version
    // "../../../assets/modelsjurassic/mosasaurus.glb",//7    13  dificil
     //"../../../assets/modelsjurassic/paluxysaurus.glb",//26   14 new ver
