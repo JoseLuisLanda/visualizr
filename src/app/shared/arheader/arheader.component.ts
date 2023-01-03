@@ -12,14 +12,14 @@ export class ARHeaderComponent implements OnInit, OnChanges {
     "../../../assets/modelstuzofari/armadillo.glb",//8    0
     "../../../assets/modelstuzofari/bengal_cat.glb",//5   1
     "../../../assets/modelstuzofari/lagarto.glb",//13     2 dif
-    "../../../assets/modelstuzofari/lobo_anim.glb",//1    3 n
+    "../../../assets/modelstuzofari/lobo_anim.glb",//1    3 ok gde
     //"../../../assets/modelstuzofari/lobo.glb",//5         4 n
     //"../../../assets/modelstuzofari/lobopup.glb",//6.6    5 n
     "../../../assets/modelstuzofari/pinguino.glb",//.900   6
     "../../../assets/modelstuzofari/siberian_husky.glb",//.925    7
 //models dino
-    "../../../assets/modelsjurassic/alienverde.glb",//2    8 n
-    "../../../assets/modelsjurassic/ankylosaurus.glb",//2   9 n
+    //"../../../assets/modelsjurassic/alienverde.glb",//2    8 n
+    //"../../../assets/modelsjurassic/ankylosaurus.glb",//2   9 n
     "../../../assets/modelsjurassic/ceratosaurus.glb",//3     10  ok
     "../../../assets/modelsjurassic/gallimimus.glb",//3    11 heavy ojos mal
     //"../../../assets/modelsjurassic/megalodon.glb",//5         12 new version
