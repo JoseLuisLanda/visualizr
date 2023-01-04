@@ -46,7 +46,7 @@ AFRAME.registerComponent('markers_start',{
 			}else{
 			//Adding text to each marker
 			var textEl = document.createElement('a-image');
-			var size = 3;
+			var size = 1;
 			//textEl.setAttribute('id','text');
 			//textEl.setAttribute('text',{color: 'red', align: 'center', value:markersNameArray[k], width: '5.5'});
 			textEl.setAttribute('id','image');
