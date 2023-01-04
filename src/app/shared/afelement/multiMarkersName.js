@@ -28,7 +28,17 @@ AFRAME.registerComponent('markers_start',{
 
 			markerEl.setAttribute('registerevents','');
 			sceneEl.appendChild(markerEl);
-
+			if(k==0)
+			{
+				var vidEl = document.createElement('a-video');
+				//<a-video src="#penguin-sledding" width="16" height="9" position="0 0 -20"></a-video>
+				textEl.setAttribute('id','video');
+			textEl.setAttribute('geometry',{width:'16', height:'9'});
+			textEl.setAttribute('material',{src: '#cumple'});
+			textEl.object3D.position.set(0, 0, -20);
+			textEl.object3D.rotation.set(-90, 0, 0);
+			markerEl.appendChild(textEl);
+			}else{
 			//Adding text to each marker
 			var textEl = document.createElement('a-image');
 			
@@ -41,7 +51,8 @@ AFRAME.registerComponent('markers_start',{
 			textEl.setAttribute('material',{src: '#menu'+[k], color: '#FFF'});
 			textEl.object3D.position.set(0, 0, 0);
 			textEl.object3D.rotation.set(-90, 0, 0);
-
+			markerEl.appendChild(textEl);
+		}
 /*
 class="clickable"
       gesture-handler="minScale: 0.25; maxScale: 10"
@@ -58,7 +69,7 @@ class="clickable"
    </a-plane>
 */
 
-			markerEl.appendChild(textEl);
+			
 		}
 	}
 });
