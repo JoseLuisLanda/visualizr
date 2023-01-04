@@ -46,13 +46,13 @@ AFRAME.registerComponent('markers_start',{
 			}else{
 			//Adding text to each marker
 			var textEl = document.createElement('a-image');
-			
+			var size = k <= 5 ? k + 1 : 5;
 			//textEl.setAttribute('id','text');
 			//textEl.setAttribute('text',{color: 'red', align: 'center', value:markersNameArray[k], width: '5.5'});
 			textEl.setAttribute('id','image');
 			textEl.setAttribute('class','clickable');
 			textEl.setAttribute('gesture-handler',{minScale: '1', maxScale: '10'});
-			//textEl.setAttribute('geometry',{width:'1', height:'2'});
+			textEl.setAttribute('geometry',{width: k, height:k});
 			textEl.setAttribute('material',{src: '#menu'+[k], color: '#FFF'});
 			textEl.object3D.position.set(0, 0, 0);
 			textEl.object3D.rotation.set(-90, 0, 0);
