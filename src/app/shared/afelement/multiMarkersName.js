@@ -37,7 +37,7 @@ AFRAME.registerComponent('markers_start',{
 				vidEl.setAttribute('material',{src: '#cumple'});
 				vidEl.object3D.position.set(0, 0, -20);
 				vidEl.object3D.rotation.set(-90, 0, 0);
-			markerEl.appendChild(textEl);
+			markerEl.appendChild(vidEl);
 			}else{
 			//Adding text to each marker
 			var textEl = document.createElement('a-image');
