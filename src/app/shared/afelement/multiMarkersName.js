@@ -36,8 +36,10 @@ AFRAME.registerComponent('markers_start',{
 				vidEl.setAttribute('material',{src: '#cumple'});
 				vidEl.setAttribute('preload', 'auto');
 				vidEl.setAttribute('crossOrigin', 'anonymous');
-				vidEl.setAttribute('mute', true);
-				vidEl.setAttribute('autoplay', true);
+				vidEl.setAttribute('mute', false);
+				vidEl.setAttribute('autoplay');
+				vidEl.setAttribute('playsinline');
+				vidEl.setAttribute('webkit-playsinline');
 				vidEl.object3D.position.set(0, 0, 0);
 				vidEl.object3D.rotation.set(-90, 0, 0);
 			markerEl.appendChild(vidEl);
