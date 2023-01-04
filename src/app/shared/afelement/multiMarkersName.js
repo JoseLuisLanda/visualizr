@@ -33,9 +33,12 @@ AFRAME.registerComponent('markers_start',{
 				var vidEl = document.createElement('a-video');
 				//<a-video src="#penguin-sledding" width="16" height="9" position="0 0 -20"></a-video>
 				vidEl.setAttribute('id','video');
-				vidEl.setAttribute('geometry',{width:'16', height:'9'});
 				vidEl.setAttribute('material',{src: '#cumple'});
-				vidEl.object3D.position.set(0, 0, -20);
+				vidEl.setAttribute('preload', 'auto');
+				vidEl.setAttribute('crossOrigin', 'anonymous');
+				vidEl.setAttribute('mute', true);
+				vidEl.setAttribute('autoplay', true);
+				vidEl.object3D.position.set(0, 0, 0);
 				vidEl.object3D.rotation.set(-90, 0, 0);
 			markerEl.appendChild(vidEl);
 			}else{
