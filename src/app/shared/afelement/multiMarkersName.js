@@ -13,7 +13,8 @@ AFRAME.registerComponent('markers_start',{
 		//list of the markers
 		for(var i=1; i<=18; i++)
 		{
-			var url="../../../assets/presets/pattern-Individual_Blocks-"+i+".patt";
+			var url = i != 1 ? "../../../assets/presets/pattern-Individual_Blocks-"+i+".patt":
+			"../../../assets/presets/publicar.patt";
 			markersURLArray.push(url);
 			markersNameArray.push('Marker_'+i);
 			//console.log(url);
@@ -28,22 +29,7 @@ AFRAME.registerComponent('markers_start',{
 
 			markerEl.setAttribute('registerevents','');
 			sceneEl.appendChild(markerEl);
-			if(k==0)
-			{
-				var vidEl = document.createElement('a-video');
-				//<a-video src="#penguin-sledding" width="16" height="9" position="0 0 -20"></a-video>
-				vidEl.setAttribute('id','video');
-				vidEl.setAttribute('material',{src: '#cumple'});
-				vidEl.setAttribute('preload', 'auto');
-				vidEl.setAttribute('crossOrigin', 'anonymous');
-				vidEl.setAttribute('mute', false);
-				vidEl.setAttribute('autoplay');
-				vidEl.setAttribute('playsinline');
-				vidEl.setAttribute('webkit-playsinline');
-				vidEl.object3D.position.set(0, 0, 0);
-				vidEl.object3D.rotation.set(-90, 0, 0);
-			markerEl.appendChild(vidEl);
-			}else{
+			
 			//Adding text to each marker
 			var textEl = document.createElement('a-image');
 			var size = 4;
@@ -57,7 +43,7 @@ AFRAME.registerComponent('markers_start',{
 			textEl.object3D.position.set(0, 0, 0);
 			textEl.object3D.rotation.set(-90, 0, 0);
 			markerEl.appendChild(textEl);
-		}
+		
 /*
 class="clickable"
       gesture-handler="minScale: 0.25; maxScale: 10"
