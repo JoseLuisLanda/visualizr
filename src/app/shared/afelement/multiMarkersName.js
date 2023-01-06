@@ -11,15 +11,15 @@ AFRAME.registerComponent('markers_start',{
 		var sceneEl = document.querySelector('a-scene');
 		
 		//list of the markers
-		for(var i=1; i<=28; i++)
+		for(var i=1; i<=23; i++)
 		{
-			var url = "../../../assets/presets/pat"+i+".patt";
+			var url = "../../../assets/presets/patterns/pat"+i+".patt";
 			markersURLArray.push(url);
 			markersNameArray.push('Marker_'+i);
 			//console.log(url);
 		}
 
-		for(var k=0; k<28; k++)
+		for(var k=0; k<23; k++)
 		{
 			var markerEl = document.createElement('a-marker');
 			markerEl.setAttribute('type','pattern');
