@@ -25,6 +25,9 @@ AFRAME.registerComponent('markers_start',{
 			markerEl.setAttribute('type','pattern');
 			markerEl.setAttribute('url',markersURLArray[k]);
 			markerEl.setAttribute('id',markersNameArray[k]);
+			markerEl.setAttribute('markerhandlr');
+			markerEl.setAttribute('emitevents',true);
+			markerEl.setAttribute('cursor','rayOrigin: mouse');
 
 			markerEl.setAttribute('registerevents','');
 			sceneEl.appendChild(markerEl);
@@ -42,6 +45,15 @@ AFRAME.registerComponent('markers_start',{
 			textEl.object3D.position.set(0, .1, 0);
 			textEl.object3D.rotation.set(-90, 0, 0);
 
+
+			markerEl.addEventListener('click', function(ev, target){
+				const intersectedElement = ev && ev.detail && ev.detail.intersectedEl;
+				if (textEl && intersectedElement === textEl) {
+					const scale = textEl.getAttribute('scale');
+					Object.keys(scale).forEach((key) => scale[key] = scale[key] + 1);
+					textEl.setAttribute('scale', scale);
+				}
+			});
 /*
 class="clickable"
       gesture-handler="minScale: 0.25; maxScale: 10"
