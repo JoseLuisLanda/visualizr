@@ -25,9 +25,9 @@ AFRAME.registerComponent('markers_start',{
 			markerEl.setAttribute('type','pattern');
 			markerEl.setAttribute('url',markersURLArray[k]);
 			markerEl.setAttribute('id',markersNameArray[k]);
-			markerEl.setAttribute('markerhandlr');
-			markerEl.setAttribute('emitevents',true);
-			markerEl.setAttribute('cursor','rayOrigin: mouse');
+			//markerEl.setAttribute('markerhandlr');
+			//markerEl.setAttribute('emitevents',true);
+			//markerEl.setAttribute('cursor','rayOrigin: mouse');
 
 			markerEl.setAttribute('registerevents','');
 			sceneEl.appendChild(markerEl);
