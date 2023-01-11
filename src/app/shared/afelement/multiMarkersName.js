@@ -25,6 +25,9 @@ AFRAME.registerComponent('markers_start',{
 			markerEl.setAttribute('type','pattern');
 			markerEl.setAttribute('url',markersURLArray[k]);
 			markerEl.setAttribute('id',markersNameArray[k]);
+			markerEl.setAttribute('markerhandlr');
+			markerEl.setAttribute('emitevents',true);
+			markerEl.setAttribute('cursor','rayOrigin: mouse');
 
 			markerEl.setAttribute('registerevents','');
 			sceneEl.appendChild(markerEl);
@@ -41,8 +44,10 @@ AFRAME.registerComponent('markers_start',{
 			textEl.setAttribute('material',{src: '#menu'+[k], color: '#FFF'});
 			textEl.object3D.position.set(0, 0, 0);
 			textEl.object3D.rotation.set(-90, 0, 0);
-			markerEl.appendChild(textEl);
+
+markerEl.appendChild(textEl);
 		
+
 /*
 class="clickable"
       gesture-handler="minScale: 0.25; maxScale: 10"
