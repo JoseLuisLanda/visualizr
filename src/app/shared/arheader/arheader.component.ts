@@ -96,6 +96,12 @@ export class ARHeaderComponent implements OnInit, OnChanges {
 
   "../../../assets/models/altar_de_dia_de_muertos.glb",
   "../../../assets/models/the_day_of_the_dead.glb",
+  "../../../assets/models/sky.glb",
+  "../../../assets/models/rubble.glb",
+  "../../../assets/models/tracker.glb",
+  "../../../assets/models/marshall.glb",
+  "../../../assets/models/everest.glb",
+  "../../../assets/models/chase.glb",
 ];
   constructor() { }
   ngOnChanges(changes: SimpleChanges): void {
